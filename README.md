@@ -42,13 +42,20 @@ I have also created a rake task `gather_order` which is ran through a cron job u
 
 ## Setup
 
-run `bundle install` to intall gems 
-run `npm instal` to install node dependencies 
+run `bundle install` to intall gems
+
+run `npm instal` to install node dependencies
+
 run `rails webpacker:install` to install webpack
+
 run `rails db:setup` to create database
-run `rails db:migrate` to run all the migrations 
+
+run `rails db:migrate` to run all the migrations
+
 to start the server run `rails s` 
+
 you can create and see oerders at `http://localhost:3000/orders`
+
 and you can see bulk orders at `http://localhost:3000/bulk_orders`
 
 ##### to run the rake task manually because cron jobs don't work properly on local system run `rake gather:order`
