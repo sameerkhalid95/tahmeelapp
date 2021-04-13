@@ -1,0 +1,26 @@
+
+<table class="table">
+  <thead class="table-dark">
+  <tr>
+    <th>Pick up</th>
+    <th>Drop off</th>
+    <th>Weight</th>
+    <th>Sending time</th>
+    <th>Sending date</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% orders.each do |order| %>
+    <tr>
+      <td><%= order.pick_up %></td>
+      <td><%= order.drop_off %></td>
+      <td><%= order.weight %></td>
+      <td><%= order.sending_time %></td>
+      <td><%= order.sending_time.to_date %></td>
+      <td><%= link_to 'Show', order %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

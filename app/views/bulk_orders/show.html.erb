@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reference number:</strong>
+  <%= @bulk_order.reference_number %>
+</p>
+
+<p>
+  <strong>Pick up:</strong>
+  <%= @bulk_order.pick_up %>
+</p>
+
+<p>
+  <strong>Total weight:</strong>
+  <%= @bulk_order.total_weight %>
+</p>
+
+<%= render 'order_table', orders: @bulk_order.orders %>
+
+<%= link_to 'Edit', edit_bulk_order_path(@bulk_order) %> |
+<%= link_to 'Back', bulk_orders_path %>

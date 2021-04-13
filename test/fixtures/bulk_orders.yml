@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reference_number: MyString
+  pick_up: MyString
+  total_weight: 1.5
+
+two:
+  reference_number: MyString
+  pick_up: MyString
+  total_weight: 1.5

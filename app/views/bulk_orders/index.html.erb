@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bulk Orders</h1>
+
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>Reference number</th>
+      <th>Pick up</th>
+      <th>List of Drop off</th>
+      <th>Total weight</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bulk_orders.each do |bulk_order| %>
+      <tr>
+        <td><%= bulk_order.reference_number %></td>
+        <td><%= bulk_order.pick_up %></td>
+        <td><%= bulk_order.orders.all.pluck(:drop_off) %></td>
+        <td><%= bulk_order.total_weight %></td>
+        <td><%= link_to 'Show', bulk_order %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

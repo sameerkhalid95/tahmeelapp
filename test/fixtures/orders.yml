@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pick_up: MyString
+  drop_off: MyString
+  weight: 1.5
+  sending_time: 2021-04-12 23:45:20
+
+two:
+  pick_up: MyString
+  drop_off: MyString
+  weight: 1.5
+  sending_time: 2021-04-12 23:45:20

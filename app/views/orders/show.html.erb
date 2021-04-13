@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pick up:</strong>
+  <%= @order.pick_up %>
+</p>
+
+<p>
+  <strong>Drop off:</strong>
+  <%= @order.drop_off %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @order.weight %>
+</p>
+
+<p>
+  <strong>Sending time:</strong>
+  <%= @order.sending_time %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
